@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Bank</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        header, footer {
+            background-color: #343a40;
+            color: #fff;
+            text-align: center;
+            padding: 15px 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .section {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .section h2 {
+            margin-top: 0;
+            color: #007BFF;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #007BFF;
+            color: white;
+        }
+        form div {
+            margin: 10px 0;
+        }
+        form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        form input[type="text"], form input[type="number"] {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        form input[type="submit"] {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        form input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Book Bank</h1>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Book Catalog Section -->
+        <section id="book-catalog" class="section">
+            <h2>Book Catalog</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>Genre</th>
+                        <th>Year</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>The Great Gatsby</td>
+                        <td>F. Scott Fitzgerald</td>
+                        <td>Fiction</td>
+                        <td>1925</td>
+                        <td>$10</td>
+                    </tr>
+                    <tr>
+                        <td>To Kill a Mockingbird</td>
+                        <td>Harper Lee</td>
+                        <td>Fiction</td>
+                        <td>1960</td>
+                        <td>$12</td>
+                    </tr>
+                    <!-- Add more books as needed -->
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Add Book Form Section -->
+        <section id="add-book-form" class="section">
+            <h2>Add a New Book</h2>
+            <form action="#" method="post">
+                <div>
+                    <label for="title">Title:</label>
+                    <input type="text" id="title" name="title" required>
+                </div>
+                <div>
+                    <label for="author">Author:</label>
+                    <input type="text" id="author" name="author" required>
+                </div>
+                <div>
+                    <label for="genre">Genre:</label>
+                    <input type="text" id="genre" name="genre" required>
+                </div>
+                <div>
+                    <label for="year">Year:</label>
+                    <input type="number" id="year" name="year" required>
+                </div>
+                <div>
+                    <label for="price">Price:</label>
+                    <input type="number" id="price" name="price" required>
+                </div>
+                <div>
+                    <input type="submit" value="Add Book">
+                </div>
+            </form>
+        </section>
+
+        <!-- How to Pay Section -->
+        <section id="how-to-pay" class="section">
+            <h2>How to Pay</h2>
+            <p>We accept the following payment methods:</p>
+            <ul>
+                <li>Credit/Debit Card</li>
+                <li>PayPal</li>
+                <li>Bank Transfer</li>
+                <li>Cash on Delivery (COD)</li>
+            </ul>
+        </section>
+
+        <!-- Return Policy Section -->
+        <section id="return-policy" class="section">
+            <h2>Return Policy</h2>
+            <p>Books can be returned within 30 days of purchase. Please ensure the book is in its original condition.</p>
+            <p>For returns, contact our support team at support@bookbank.com or call (123) 456-7890.</p>
+        </section>
+
+        <!-- Prices Section -->
+        <section id="prices" class="section">
+            <h2>Prices</h2>
+            <p>The prices of books are listed in the catalog above. Prices may vary based on the edition and condition of the book.</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Book Bank. All rights reserved.</p>
+    </footer>
+</body>
+</html>
